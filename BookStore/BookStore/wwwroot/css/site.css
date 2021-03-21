@@ -1,0 +1,116 @@
+﻿
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+/* --------  Book  --------*/
+.btn-add-new-custom{
+    float: right !important;
+    color: white !important;
+}
+
+a:not([href]):not([tabindex]).btn-add-new-custom {
+    color: white !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+
+/* ----------------     Media     ---------------   */
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.search-main {
+    position: relative;
+    padding-left: 5em !important;
+    padding-right: 5em !important;
+}
+
+.search-btn {
+    position: absolute !important;
+    top: 127px;
+    right: 6em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.search-btn-icon {
+    position: absolute !important;
+    top: 21px;
+    left: 5em;
+    font-size: 1.2em;
+    background-color: #eaeaea;
+}
+
+.searche-box-style {
+    height: 50px;
+    font-size: 1.5em;
+    background-color: #eaeaea;
+    padding-left: 3em;
+    padding-right: 11em;
+}
+
+    /* ----------------     Footer     ---------------   */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}

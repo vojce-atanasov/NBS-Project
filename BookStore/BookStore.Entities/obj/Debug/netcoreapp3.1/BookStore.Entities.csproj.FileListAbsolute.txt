@@ -1,0 +1,8 @@
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Entities\bin\Debug\netcoreapp3.1\BookStore.Entities.deps.json
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Entities\bin\Debug\netcoreapp3.1\BookStore.Entities.dll
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Entities\bin\Debug\netcoreapp3.1\BookStore.Entities.pdb
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Entities\obj\Debug\netcoreapp3.1\BookStore.Entities.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Entities\obj\Debug\netcoreapp3.1\BookStore.Entities.AssemblyInfo.cs
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Entities\obj\Debug\netcoreapp3.1\BookStore.Entities.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Entities\obj\Debug\netcoreapp3.1\BookStore.Entities.dll
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Entities\obj\Debug\netcoreapp3.1\BookStore.Entities.pdb

@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore", "BookStore\BookStore.csproj", "{92276A1A-4D36-488E-80E4-CF725537354F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2469A53-0681-4DC7-94EB-C257AAE7E0F3} = {F2469A53-0681-4DC7-94EB-C257AAE7E0F3}
+		{FBD29765-A22D-4EE9-85FF-D45B01BFA52A} = {FBD29765-A22D-4EE9-85FF-D45B01BFA52A}
+		{A3E85786-4622-42D5-9958-3325253CD7FC} = {A3E85786-4622-42D5-9958-3325253CD7FC}
+		{5314CCDA-C1F2-4AA9-A6B0-0DF3A6B9D323} = {5314CCDA-C1F2-4AA9-A6B0-0DF3A6B9D323}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Data", "BookStore.Data\BookStore.Data.csproj", "{A3E85786-4622-42D5-9958-3325253CD7FC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2469A53-0681-4DC7-94EB-C257AAE7E0F3} = {F2469A53-0681-4DC7-94EB-C257AAE7E0F3}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Service", "BookStore.Service\BookStore.Service.csproj", "{5314CCDA-C1F2-4AA9-A6B0-0DF3A6B9D323}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2469A53-0681-4DC7-94EB-C257AAE7E0F3} = {F2469A53-0681-4DC7-94EB-C257AAE7E0F3}
+		{FBD29765-A22D-4EE9-85FF-D45B01BFA52A} = {FBD29765-A22D-4EE9-85FF-D45B01BFA52A}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Repository", "BookStore.Repository\BookStore.Repository.csproj", "{FBD29765-A22D-4EE9-85FF-D45B01BFA52A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2469A53-0681-4DC7-94EB-C257AAE7E0F3} = {F2469A53-0681-4DC7-94EB-C257AAE7E0F3}
+		{A3E85786-4622-42D5-9958-3325253CD7FC} = {A3E85786-4622-42D5-9958-3325253CD7FC}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Entities", "BookStore.Entities\BookStore.Entities.csproj", "{F2469A53-0681-4DC7-94EB-C257AAE7E0F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92276A1A-4D36-488E-80E4-CF725537354F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92276A1A-4D36-488E-80E4-CF725537354F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92276A1A-4D36-488E-80E4-CF725537354F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92276A1A-4D36-488E-80E4-CF725537354F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E85786-4622-42D5-9958-3325253CD7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E85786-4622-42D5-9958-3325253CD7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E85786-4622-42D5-9958-3325253CD7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E85786-4622-42D5-9958-3325253CD7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5314CCDA-C1F2-4AA9-A6B0-0DF3A6B9D323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5314CCDA-C1F2-4AA9-A6B0-0DF3A6B9D323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5314CCDA-C1F2-4AA9-A6B0-0DF3A6B9D323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5314CCDA-C1F2-4AA9-A6B0-0DF3A6B9D323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBD29765-A22D-4EE9-85FF-D45B01BFA52A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD29765-A22D-4EE9-85FF-D45B01BFA52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD29765-A22D-4EE9-85FF-D45B01BFA52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD29765-A22D-4EE9-85FF-D45B01BFA52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2469A53-0681-4DC7-94EB-C257AAE7E0F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2469A53-0681-4DC7-94EB-C257AAE7E0F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2469A53-0681-4DC7-94EB-C257AAE7E0F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2469A53-0681-4DC7-94EB-C257AAE7E0F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4C1FFCD-E656-4BA5-A9B7-A2881EC4AC63}
+	EndGlobalSection
+EndGlobal

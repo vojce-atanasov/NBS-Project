@@ -1,0 +1,128 @@
+﻿
+@model BookStore.Entities.Book
+    <div class="container">
+        <section class="first">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-uppercase text-center">Details</h1>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section>
+            @*<div class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Title)
+                </div>                                                   //// moze i na ovoj na4in celoto
+                <div class="col-sm-2">
+                    @Html.DisplayFor(model => model.Title)
+                    <span>@Model.Title</span>
+                </div>*@
+
+            <div class="container">
+                <div class="row text-center">
+                    <table>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Title)
+                                @*<label> Titel </label>*@
+                                @*<span>@Model.Title</span>*@
+                            </th>
+                            <td>
+                                @Html.DisplayFor(model => model.Title)   @*moze i ovaka so m - namesto model*@
+                                @*<span>@Model.Title</span>*@
+                                @*<label> Titel </label>*@
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.AuthorName)</th>
+                            <td>@Html.DisplayFor(model => model.AuthorName)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.YearOfIssue)</th>
+                            <td> @Html.DisplayFor(model => model.YearOfIssue)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.NumberOfPages)</th>
+                            <td>@Html.DisplayFor(model => model.NumberOfPages)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.PublisherName)</th>
+                            <td>@Html.DisplayFor(model => model.PublisherName)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.UserId)</th>
+                            <td>@Html.DisplayFor(model => model.UserId)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Gener)</th>
+                            <td>@Html.DisplayFor(model => model.Gener)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.CategoryName)</th>
+                            <td>@Html.DisplayFor(model => model.CategoryName)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Price)</th>
+                            <td>@Html.DisplayFor(model => model.Price)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.BookType)</th>
+                            <td>@Html.DisplayFor(model => model.BookType)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.BookCoverType)</th>
+                            <td>@Html.DisplayFor(model => model.BookCoverType)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Description)</th>
+                            <td>@Html.DisplayFor(model => model.Description)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Language)</th>
+                            <td>@Html.DisplayFor(model => model.Language)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Country)</th>
+                            <td>@Html.DisplayFor(model => model.Country)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Edition)</th>
+                            <td>@Html.DisplayFor(model => model.Edition)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Dimensions)</th>
+                            <td>@Html.DisplayFor(model => model.Dimensions)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Weight)</th>
+                            <td>@Html.DisplayFor(model => model.Weight)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Copies)</th>
+                            <td>@Html.DisplayFor(model => model.Copies)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Shipping)</th>
+                            <td>@Html.DisplayFor(model => model.Shipping)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.PhotoURL)</th>
+                            <td>@Html.DisplayFor(model => model.PhotoURL)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.SoldItems)</th>
+                            <td>@Html.DisplayFor(model => model.SoldItems)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Rating)</th>
+                            <td>@Html.DisplayFor(model => model.Rating)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.DateAdded)</th>
+                            <td>@Html.DisplayFor(model => model.DateAdded)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>

@@ -1,0 +1,148 @@
+﻿
+@model BookStore.Entities.Book
+    <div class="container">
+        <section class="first">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-uppercase text-center">Edit Book</h1>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section>
+            <form asp-action="Edit">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="Title" for="inputEmail4">Title</label>
+                        <input asp-for="Title" type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="AuthorName" for="inputPassword4">Author Name</label>
+                        <input asp-for="AuthorName" type="text" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AuthorID" for="inputAddress">AuthorID</label>
+                    <select asp-for="AuthorID" class="form-control" asp-items="ViewBag.AuthorList"></select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="YearOfIssue" for="inputEmail4">Year Of Issue</label>
+                        <input asp-for="YearOfIssue" type="date" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="NumberOfPages" for="inputPassword4">Number Of Pages</label>
+                        <input asp-for="NumberOfPages" type="text" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="PublisherName" for="inputEmail4">Publisher Name</label>
+                        <input asp-for="PublisherName" type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="PublisherID" for="inputPassword4">Publisher ID</label>
+                        <select asp-for="PublisherID" class="form-control" asp-items="ViewBag.PublisherList"></select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="UserId" for="inputEmail4">User Id</label>
+                        <select asp-for="UserId" class="form-control" asp-items="ViewBag.AuthorID"></select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="Gener" for="inputPassword4">Gener</label>
+                        <input asp-for="Gener" type="text" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="CategoryName" for="inputEmail4">Category Name</label>
+                        <input asp-for="CategoryName" type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="CategoryID" for="inputPassword4"></label>
+                        <select asp-for="CategoryID" class="form-control" asp-items="ViewBag.CategoryList"></select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label asp-for="Price" for="inputEmail4">Price</label>
+                        <input asp-for="Price" type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="BookType" for="inputPassword4">Book Type</label>
+                        <input asp-for="BookType" type="text" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="BookCoverType" for="inputEmail4">BookCover Type</label>
+                        <input asp-for="BookCoverType" type="text" class="form-control" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" for="inputAddress">Description</label>
+                    <input asp-for="Description" type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="Language" for="inputEmail4">Language</label>
+                        <input asp-for="Language" type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="Country" for="inputPassword4">Country</label>
+                        <input asp-for="Country" type="text" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="Edition" for="inputEmail4">Edition</label>
+                        <input asp-for="Edition" type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="Dimensions" for="inputPassword4">Dimensions</label>
+                        <input asp-for="Dimensions" type="text" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="Weight" for="inputEmail4">Weight</label>
+                        <input asp-for="Weight" type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="Copies" for="inputPassword4">Copies</label>
+                        <input asp-for="Copies" type="text" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="Shipping" for="inputEmail4">Shipping</label>
+                        <input asp-for="Shipping" type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="SoldItems" for="inputPassword4">Solditems</label>
+                        <input asp-for="SoldItems" type="text" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhotoURL" for="inputAddress">Photo URL</label>
+                    <input asp-for="PhotoURL" type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="Rating" for="inputEmail4">Rating</label>
+                        <input asp-for="Rating" type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="DateAdded" for="inputPassword4">Date Added</label>
+                        <input asp-for="DateAdded" type="date" class="form-control" id="inputPassword4" placeholder="mm/dd/yyy">
+                    </div>
+                </div>
+                <div class="col-12 mt-3">
+                    <input type="submit" name="name" value="Edit" class="btn btn-primary btm-block text-uppercase" style="width: 100%" />
+                </div>
+            </form>
+            <div class="pt-3">
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </section>
+    </div>

@@ -1,0 +1,16 @@
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.deps.json
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.dll
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.pdb
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Data.dll
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Entities.dll
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Repository.dll
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Repository.pdb
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Data.pdb
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Entities.pdb
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csprojAssemblyReference.cache
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfo.cs
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.CopyComplete
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.dll
+C:\Users\User\Desktop\NBS Project\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.pdb

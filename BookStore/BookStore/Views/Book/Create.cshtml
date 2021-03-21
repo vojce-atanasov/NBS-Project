@@ -1,0 +1,261 @@
+﻿
+@model BookStore.Entities.Book
+<div class="container">
+    <section class="first">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="text-uppercase text-center">Create Book</h1>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section>
+        <div class="row">
+            <div class="col-13 col-md-12">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Title" for="inputEmail4">Title</label>
+                            <input asp-for="Title" type="text" class="form-control" id="inputEmail4">
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="AuthorID" for="inputAddress"></label>
+                            <select asp-for="AuthorID" class="form-control" asp-items="ViewBag.AuthorList"></select>
+                             <a class="btn btn-success btn-sm btn-add-new-custom" data-toggle="modal" data-target="#authorModal">Add New Author</a>
+                            <input asp-for="AuthorName" type="text" hidden class="form-control">
+                        </div>
+                    </div>                    
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="YearOfIssue" for="inputEmail4"></label>
+                            <input asp-for="YearOfIssue" type="date" class="form-control" id="inputEmail4" placeholder="mm/dd/yyy">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="NumberOfPages" for="inputPassword4"></label>
+                            <input asp-for="NumberOfPages" type="text" class="form-control" id="inputPassword4">
+                        </div>
+                    </div>
+                    <div class="form-row">                        
+                        <div class="col-12">
+                            <label asp-for="PublisherID" for="inputPassword4"></label>
+                            <select asp-for="PublisherID" class="form-control" asp-items="ViewBag.PublisherList"></select>  @*opcija za selekt*@
+                            <a class="btn btn-success btn-sm btn-add-new-custom" data-toggle="modal" data-target="#publisherModal">Add New Publisher</a>                            
+                            <input asp-for="PublisherName" type="text" hidden class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="UserId" for="inputEmail4"></label>
+                            <input asp-for="UserId" type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Gener" for="inputPassword4"></label>
+                            <input asp-for="Gener" type="text" class="form-control" id="inputPassword4">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        @*<div class="form-group col-md-6">
+                                <label asp-for="CategoryName" for="inputEmail4"></label>
+                                <input asp-for="CategoryName" type="text" class="form-control" id="inputEmail4">
+                            </div>*@
+
+                        <div class="form-group col-md-12">
+                            <label asp-for="CategoryID" class="control-label"></label>
+
+                            @Html.DropDownListFor(x => Model.CategoryID, new SelectList(ViewBag.CategoryList, "Value", "Text"),
+                            htmlAttributes: new { @class = "form-control", id = "Category" })
+
+                            <a class="btn btn-success btn-sm btn-add-new-custom" data-toggle="modal" data-target="#categoryModal">Add New Category</a>
+                            
+                            @*<select asp-for="CategoryID" class="form-control" asp-items="ViewBag.CategoryList"></select>*@
+                            <input asp-for="CategoryName" hidden class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label asp-for="Price" for="inputEmail4"></label>
+                            <input asp-for="Price" type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label asp-for="BookType" for="inputPassword4"></label>
+                            <input asp-for="BookType" type="text" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label asp-for="BookCoverType" for="inputEmail4"></label>
+                            <input asp-for="BookCoverType" type="text" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description" for="inputAddress"></label>
+                        <input asp-for="Description" type="text" class="form-control" id="inputAddress" placeholder="">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Language" for="inputEmail4"></label>
+                            <input asp-for="Language" type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Country" for="inputPassword4"></label>
+                            <input asp-for="Country" type="text" class="form-control" id="inputPassword4">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Edition" for="inputEmail4"></label>
+                            <input asp-for="Edition" type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Dimensions" for="inputPassword4"></label>
+                            <input asp-for="Dimensions" type="text" class="form-control" id="inputPassword4">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Weight" for="inputEmail4"></label>
+                            <input asp-for="Weight" type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Copies" for="inputPassword4"></label>
+                            <input asp-for="Copies" type="text" class="form-control" id="inputPassword4">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Shipping" for="inputEmail4"></label>
+                            <input asp-for="Shipping" type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="SoldItems" for="inputPassword4"></label>
+                            <input asp-for="SoldItems" type="text" class="form-control" id="inputPassword4">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PhotoURL" for="inputAddress"></label>
+                        <input asp-for="PhotoURL" type="text" class="form-control" id="inputAddress" placeholder="">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Rating" for="inputEmail4"></label>
+                            <input asp-for="Rating" type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="DateAdded" for="inputPassword4"></label>
+                            <input asp-for="DateAdded" type="date" class="form-control" id="inputPassword4" placeholder="mm/dd/yyy">
+                        </div>
+                    </div>
+                    <div class="row form-group mt-3">
+                        <div class="col-12">
+                            <input type="submit" name="name" value="Create" class="btn btn-primary btm-block text-uppercase" style="width: 100%" />
+                        </div>
+                    </div>
+                </form>
+                <div class="pt-3">
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------   Modal Author    -------------->
+    <section>
+        <div class="modal fade" id="authorModal" tabindex="-1" role="dialog" aria-labelledby="authorModalLabel" aria-hidden="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="authotModalLabel">Add New Author</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Name..." />
+                        </div>
+                        <div class="form-group">
+                            <label>Country</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Country..." />
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Date of Birth..." />
+                        </div>
+                        <div class="form-group">
+                            <label>Short Description</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Short Description..." />
+                        </div>
+                        <div class="form-group">
+                            <label>Lenguage</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Lenguage..." />
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Gender..." />
+                        </div>
+                        <p>Modal body text goes here.</p>
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-success" id="addNewAuthor">Add New Author</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------   Modal Publisher    -------------->
+    <section>
+        <div class="modal fade" id="publisherModal" tabindex="-1" role="dialog" aria-labelledby="publisherModalLabel" aria-hidden="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="publisherModalLabel">Add New Publisher</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">                        
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success" id="addNewPublisher">Add New Publisher</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------   Modal Category    -------------->
+    <section>
+        <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="categoryModalLabel" aria-hidden="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="categoryModalLabel">Add New Category</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success" id="addNewCategory">Add New Category</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    @section Scripts {
+        <script src="~/js/book/book.js"></script>
+
+    }
+
+
+
